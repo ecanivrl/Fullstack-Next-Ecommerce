@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+svg {
+    flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+  }
+  
+  .custom-vertical-scrollbar {
+    &::-webkit-scrollbar {
+      height: 4px;
+      width: 4px;
+    }
+  
+    &::-webkit-scrollbar-track {
+      background: #c9c;
+      border-radius: 38px;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background: #400E32;
+      border-radius: 38px;
+    }
+  }
